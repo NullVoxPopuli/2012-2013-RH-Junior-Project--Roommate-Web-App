@@ -1,4 +1,21 @@
 WOWTW::Application.routes.draw do
+
+  match ':controller(/:action(/:id))'
+
+  # get "item/new"
+
+  # get "item/create"
+
+  # get "user/new"
+
+  # get "user/create"
+
+  # get "group/new"
+
+  # get "group/create"
+
+  #get 'group/view/:group_id' , :controller => 'group', :action => 'view'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
