@@ -1,5 +1,11 @@
 WOWTW::Application.routes.draw do
 
+  match "/" => "home#index"
+
+  get "home/index"
+
+  root :to => "home#index"
+
   match ':controller(/:action(/:id))'
 
   # get "item/new"
