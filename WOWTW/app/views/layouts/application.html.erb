@@ -2,13 +2,27 @@
 <html>
 <head>
   <title>WOWTW</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="container">
+	<div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><%= link_to "Home", root_url %></li>
+          <li><%= link_to "About", root_url + "about" %></li>
+          <li><%= link_to "Register", root_url + "user/register" %></li>
+        </ul>
+        <h2 class="muted">Who Owes What To Whom</h2>
+    </div>
 <%= yield %>
+    <hr>
 
+    <footer>
+    	<p>&copy; The Dinosaurs 2012</p>
+    </footer>
+</div>
 </body>
 </html>

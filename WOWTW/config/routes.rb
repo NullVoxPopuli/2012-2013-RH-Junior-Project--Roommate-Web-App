@@ -1,5 +1,7 @@
 WOWTW::Application.routes.draw do
 
+  get "about/index"
+
   match "/" => "home#index"
 
   get "home/index"

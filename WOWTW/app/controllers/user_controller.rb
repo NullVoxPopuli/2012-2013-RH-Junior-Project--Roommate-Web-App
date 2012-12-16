@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-  def new
+  def register
   end
 
   def create
