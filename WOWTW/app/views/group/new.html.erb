@@ -1,2 +1,8 @@
-<h1>Group#new</h1>
-<p>Find me in app/views/group/new.html.erb</p>
+<h1>Creating A New Group</h1>
+<div class="well">
+<%= form_for @group, :url => { :action => "create" } do |f| %>
+  <div class="span6" style="padding:5px"> Group Name : <%= f.text_field :name %> </div>
+  <div class ="span6" style="padding:5px"> Group Admin : <%= f.text_field :admin %> </div>
+  <%= f.submit "Create", :class=> 'span12 btn btn-primary btn-large btn-block' %>
+<% end %>
+</div>
